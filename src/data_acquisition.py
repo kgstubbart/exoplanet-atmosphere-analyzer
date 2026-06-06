@@ -9,3 +9,16 @@ obs_table = Observations.query_criteria(
 
 print("\n=== Observation Table ===")
 print(obs_table)
+
+products = Observations.get_product_list(obs_table)
+print("\n=== Products Table ===")
+print(products)
+
+print("\n=== Unique Product Types ===")
+print(set(products['productType']))
+
+print("\n=== Available Columns ===")
+print(products.colnames)
+
+print("\n=== Unique Descriptions ===")
+print(set(products['description']))
