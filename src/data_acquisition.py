@@ -1,7 +1,8 @@
-from astroquery.mast import Observations
 from pathlib import Path
-import numpy as np
+
 import h5py
+import numpy as np
+from astroquery.mast import Observations
 
 obs_table = Observations.query_criteria(
     obs_collection="JWST",
