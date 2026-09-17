@@ -1,21 +1,26 @@
-# exoplanet-atmosphere-analyzer
-This project analyizes exoplanet atmosphere's from transmission spectra. The goal is to be able to predict common gasses and temperature. 
+# Exoplanet Atmosphere Analyzer
 
+This project analyzes exoplanet atmospheres using transmission spectra. The goal is to predict common atmospheric gases and estimate atmospheric temperature.
+
+## Project Structure
+
+```text
 exoplanet-retrieval/
 ├── README.md
-├── environment.yml          # conda environment spec
+├── environment.yml          # Conda environment specification
 ├── .gitignore
 ├── data/
-│   ├── raw/                  # downloaded FITS — never edit, never commit large files
-│   └── processed/            # your cleaned spectra
+│   ├── raw/                 # Downloaded FITS files; never edit or commit large files
+│   └── processed/           # Cleaned spectra
 ├── src/
 │   ├── __init__.py
-│   ├── data_acquisition.py   
-│   ├── preprocessing.py      
-│   ├── forward_model.py      
-│   ├── likelihood.py        
-│   └── retrieval.py          
-├── notebooks/                # exploration; not the source of truth
+│   ├── data_acquisition.py
+│   ├── preprocessing.py
+│   ├── forward_model.py
+│   ├── likelihood.py
+│   └── retrieval.py
+├── notebooks/               # Exploration; not the source of truth
 ├── tests/
-├── results/                  # plots and posterior outputs
+├── results/                 # Plots and posterior outputs
 └── docs/
+```
